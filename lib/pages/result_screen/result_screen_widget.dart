@@ -67,8 +67,6 @@ class _ResultScreenWidgetState extends State<ResultScreenWidget> {
             widget.resultList!.toList()));
       });
     });
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

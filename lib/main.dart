@@ -1,9 +1,6 @@
 import 'package:provider/provider.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:device_preview/device_preview.dart';
-
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
@@ -19,22 +16,10 @@ void main() async {
 
   final appState = FFAppState(); // Initialize FFAppState
 
-runApp(
-  DevicePreview(
-    enabled: kIsWeb,
-     isToolbarVisible: false,
-    data: DevicePreviewData(
-      deviceIdentifier: Devices.ios.iPhone13.toString(),
-      isFrameVisible: true,
-    ),
-    builder: (context) => ChangeNotifierProvider(
-      create: (context) => appState,
-      child: MyApp(),
-      ),
-    ),
-  );
-  
-
+  runApp(ChangeNotifierProvider(
+    create: (context) => appState,
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatefulWidget {

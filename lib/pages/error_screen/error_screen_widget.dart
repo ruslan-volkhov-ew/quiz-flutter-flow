@@ -30,8 +30,6 @@ class _ErrorScreenWidgetState extends State<ErrorScreenWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ErrorScreenModel());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

@@ -26,8 +26,6 @@ class _HistorScreenWidgetState extends State<HistorScreenWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => HistorScreenModel());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

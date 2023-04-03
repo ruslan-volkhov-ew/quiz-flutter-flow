@@ -24,8 +24,6 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SettingsScreenModel());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

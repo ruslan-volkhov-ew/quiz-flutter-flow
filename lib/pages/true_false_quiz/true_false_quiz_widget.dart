@@ -27,8 +27,6 @@ class _TrueFalseQuizWidgetState extends State<TrueFalseQuizWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => TrueFalseQuizModel());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

@@ -27,8 +27,6 @@ class _OneAnswerQuizWidgetState extends State<OneAnswerQuizWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => OneAnswerQuizModel());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
