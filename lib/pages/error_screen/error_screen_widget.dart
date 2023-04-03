@@ -96,6 +96,13 @@ class _ErrorScreenWidgetState extends State<ErrorScreenWidget> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              Align(
+                alignment: AlignmentDirectional(0.0, 0.0),
+                child: Text(
+                  'Error:',
+                  style: FlutterFlowTheme.of(context).bodyMedium,
+                ),
+              ),
               Text(
                 widget.errorText,
                 textAlign: TextAlign.center,
