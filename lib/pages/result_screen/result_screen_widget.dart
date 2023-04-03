@@ -89,7 +89,7 @@ class _ResultScreenWidgetState extends State<ResultScreenWidget> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(80.0),
         child: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+          backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
@@ -112,7 +112,7 @@ class _ResultScreenWidgetState extends State<ResultScreenWidget> {
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
             child: Text(
               widget.appBarText,
-              style: FlutterFlowTheme.of(context).title2.override(
+              style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Poppins',
                     color: Colors.white,
                     fontSize: 22.0,
@@ -144,7 +144,7 @@ class _ResultScreenWidgetState extends State<ResultScreenWidget> {
                         children: [
                           Text(
                             'You have right answered ',
-                            style: FlutterFlowTheme.of(context).bodyText1,
+                            style: FlutterFlowTheme.of(context).bodyMedium,
                           ),
                           Text(
                             functions
@@ -152,11 +152,11 @@ class _ResultScreenWidgetState extends State<ResultScreenWidget> {
                                     widget.resultList!.toList(),
                                     widget.answerData!.toList())
                                 .toString(),
-                            style: FlutterFlowTheme.of(context).bodyText1,
+                            style: FlutterFlowTheme.of(context).bodyMedium,
                           ),
                           Text(
                             ' times',
-                            style: FlutterFlowTheme.of(context).bodyText1,
+                            style: FlutterFlowTheme.of(context).bodyMedium,
                           ),
                         ],
                       ),
@@ -181,8 +181,7 @@ class _ResultScreenWidgetState extends State<ResultScreenWidget> {
                                       .primaryBackground,
                                   borderRadius: BorderRadius.circular(12.0),
                                   border: Border.all(
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryColor,
+                                    color: FlutterFlowTheme.of(context).primary,
                                     width: 2.0,
                                   ),
                                 ),
@@ -248,7 +247,7 @@ class _ResultScreenWidgetState extends State<ResultScreenWidget> {
                                                     answersIndex],
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .subtitle1
+                                                        .titleMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -272,7 +271,7 @@ class _ResultScreenWidgetState extends State<ResultScreenWidget> {
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText2
+                                                              .bodySmall
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
@@ -300,7 +299,7 @@ class _ResultScreenWidgetState extends State<ResultScreenWidget> {
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText2
+                                                              .bodySmall
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',

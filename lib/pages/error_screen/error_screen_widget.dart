@@ -52,7 +52,7 @@ class _ErrorScreenWidgetState extends State<ErrorScreenWidget> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(80.0),
         child: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+          backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
@@ -75,7 +75,7 @@ class _ErrorScreenWidgetState extends State<ErrorScreenWidget> {
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
             child: Text(
               'Error',
-              style: FlutterFlowTheme.of(context).title2.override(
+              style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Poppins',
                     color: Colors.white,
                     fontSize: 22.0,
@@ -99,7 +99,7 @@ class _ErrorScreenWidgetState extends State<ErrorScreenWidget> {
               Text(
                 widget.errorText,
                 textAlign: TextAlign.center,
-                style: FlutterFlowTheme.of(context).title2,
+                style: FlutterFlowTheme.of(context).headlineMedium,
               ),
             ],
           ),

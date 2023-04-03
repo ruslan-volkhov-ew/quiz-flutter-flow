@@ -45,7 +45,7 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(80.0),
         child: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+          backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
@@ -68,7 +68,7 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
             child: Text(
               'Settings',
-              style: FlutterFlowTheme.of(context).title2.override(
+              style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Poppins',
                     color: Colors.white,
                     fontSize: 22.0,
@@ -95,7 +95,7 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                     child: Text(
                       'Press the button if you want to reset all data of quizzes history.',
-                      style: FlutterFlowTheme.of(context).bodyText2,
+                      style: FlutterFlowTheme.of(context).bodySmall,
                     ),
                   ),
                 ),
@@ -131,7 +131,7 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
                             ),
                             duration: Duration(milliseconds: 4000),
                             backgroundColor:
-                                FlutterFlowTheme.of(context).primaryColor,
+                                FlutterFlowTheme.of(context).primary,
                           ),
                         );
                       },
@@ -141,11 +141,12 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
                       EdgeInsetsDirectional.fromSTEB(25.0, 25.0, 25.0, 25.0),
                   iconPadding:
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: FlutterFlowTheme.of(context).primaryColor,
-                  textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Poppins',
                         color: Colors.white,
                       ),
+                  elevation: 2.0,
                   borderSide: BorderSide(
                     color: Colors.transparent,
                     width: 1.0,
@@ -162,7 +163,7 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
               child: Text(
                 'Theme',
                 textAlign: TextAlign.start,
-                style: FlutterFlowTheme.of(context).subtitle1,
+                style: FlutterFlowTheme.of(context).titleMedium,
               ),
             ),
           ),
@@ -189,15 +190,15 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
               FFAppState().useSystemTheme
                   ? 'Use System Theme'
                   : 'Use custom Theme',
-              style: FlutterFlowTheme.of(context).title3,
+              style: FlutterFlowTheme.of(context).headlineSmall,
             ),
             subtitle: Text(
               FFAppState().useSystemTheme
                   ? 'Switch off this switcher to be able to switch between the Light and the Dark Themes'
                   : 'Switch on this switcher to use the Theme from the System',
-              style: FlutterFlowTheme.of(context).bodyText2,
+              style: FlutterFlowTheme.of(context).bodySmall,
             ),
-            activeColor: FlutterFlowTheme.of(context).primaryColor,
+            activeColor: FlutterFlowTheme.of(context).primary,
             activeTrackColor: Color(0x8A4B39EF),
             dense: false,
             controlAffinity: ListTileControlAffinity.trailing,
@@ -235,11 +236,12 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
                       EdgeInsetsDirectional.fromSTEB(25.0, 25.0, 25.0, 25.0),
                   iconPadding:
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: FlutterFlowTheme.of(context).primaryColor,
-                  textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Poppins',
                         color: Colors.white,
                       ),
+                  elevation: 2.0,
                   borderSide: BorderSide(
                     color: Colors.transparent,
                     width: 1.0,

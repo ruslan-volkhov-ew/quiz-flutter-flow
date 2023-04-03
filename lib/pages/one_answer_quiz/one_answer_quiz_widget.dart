@@ -53,7 +53,7 @@ class _OneAnswerQuizWidgetState extends State<OneAnswerQuizWidget> {
               width: 50.0,
               height: 50.0,
               child: CircularProgressIndicator(
-                color: FlutterFlowTheme.of(context).primaryColor,
+                color: FlutterFlowTheme.of(context).primary,
               ),
             ),
           );
@@ -65,7 +65,7 @@ class _OneAnswerQuizWidgetState extends State<OneAnswerQuizWidget> {
           appBar: PreferredSize(
             preferredSize: Size.fromHeight(80.0),
             child: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+              backgroundColor: FlutterFlowTheme.of(context).primary,
               automaticallyImplyLeading: false,
               leading: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
@@ -88,7 +88,7 @@ class _OneAnswerQuizWidgetState extends State<OneAnswerQuizWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                 child: Text(
                   'One Answer Quiz',
-                  style: FlutterFlowTheme.of(context).title2.override(
+                  style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Poppins',
                         color: Colors.white,
                         fontSize: 22.0,
@@ -121,7 +121,7 @@ class _OneAnswerQuizWidgetState extends State<OneAnswerQuizWidget> {
                             ) as List)
                                 .map<String>((s) => s.toString())
                                 .toList()[_model.indexItem],
-                            style: FlutterFlowTheme.of(context).bodyText1,
+                            style: FlutterFlowTheme.of(context).bodyMedium,
                           ),
                         ),
                         Expanded(
@@ -261,14 +261,15 @@ class _OneAnswerQuizWidgetState extends State<OneAnswerQuizWidget> {
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primaryColor,
+                                                      .primary,
                                                   textStyle: FlutterFlowTheme
                                                           .of(context)
-                                                      .subtitle2
+                                                      .titleSmall
                                                       .override(
                                                         fontFamily: 'Poppins',
                                                         color: Colors.white,
                                                       ),
+                                                  elevation: 2.0,
                                                   borderSide: BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1.0,

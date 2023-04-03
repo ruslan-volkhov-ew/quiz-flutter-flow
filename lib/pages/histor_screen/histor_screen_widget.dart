@@ -48,7 +48,7 @@ class _HistorScreenWidgetState extends State<HistorScreenWidget> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(80.0),
         child: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+          backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
@@ -71,7 +71,7 @@ class _HistorScreenWidgetState extends State<HistorScreenWidget> {
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
             child: Text(
               'History Test',
-              style: FlutterFlowTheme.of(context).title2.override(
+              style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Poppins',
                     color: Colors.white,
                     fontSize: 22.0,
@@ -151,7 +151,7 @@ class _HistorScreenWidgetState extends State<HistorScreenWidget> {
                                                       commonResultItemItem),
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .subtitle1
+                                                      .titleMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
@@ -168,7 +168,7 @@ class _HistorScreenWidgetState extends State<HistorScreenWidget> {
                                                       commonResultItemItem),
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
@@ -199,7 +199,7 @@ class _HistorScreenWidgetState extends State<HistorScreenWidget> {
                                             border: Border.all(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryColor,
+                                                      .primary,
                                               width: 2.0,
                                             ),
                                           ),
@@ -287,7 +287,7 @@ class _HistorScreenWidgetState extends State<HistorScreenWidget> {
                                                                   'question'),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .subtitle1
+                                                              .titleMedium
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
@@ -316,7 +316,7 @@ class _HistorScreenWidgetState extends State<HistorScreenWidget> {
                                                                 'Your answer: ',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText2
+                                                                    .bodySmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -345,7 +345,7 @@ class _HistorScreenWidgetState extends State<HistorScreenWidget> {
                                                                     'userA'),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText2
+                                                                    .bodySmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
