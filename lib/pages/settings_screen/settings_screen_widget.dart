@@ -251,40 +251,6 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
               ),
             ),
           ),
-          Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: FlutterFlowTheme.of(context).secondaryBackground,
-            ),
-            child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 20.0),
-              child: FFButtonWidget(
-                onPressed: FFAppState().useSystemTheme
-                    ? null
-                    : () async {
-                        Navigator.of(context).pop();
-                      },
-                text: 'Go Back',
-                options: FFButtonOptions(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(25.0, 25.0, 25.0, 25.0),
-                  iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: FlutterFlowTheme.of(context).primary,
-                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily: 'Poppins',
-                        color: Colors.white,
-                      ),
-                  elevation: 2.0,
-                  borderSide: BorderSide(
-                    color: Colors.transparent,
-                    width: 1.0,
-                  ),
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-              ),
-            ),
-          ),
         ],
       ),
     );
