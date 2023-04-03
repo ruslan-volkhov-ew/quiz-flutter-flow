@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'home_page_model.dart';
@@ -25,6 +26,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
     super.initState();
     _model = createModel(context, () => HomePageModel());
 
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      if (FFAppState().useSystemTheme) {
+        setDarkModeSetting(context, ThemeMode.system);
+      } else {
+        if (FFAppState().isLightTheme) {
+          setDarkModeSetting(context, ThemeMode.light);
+        } else {
+          setDarkModeSetting(context, ThemeMode.dark);
+        }
+      }
+    });
+
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
@@ -46,13 +60,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(80.0),
         child: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+          backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
             child: Text(
               'Main Screen',
-              style: FlutterFlowTheme.of(context).title2.override(
+              style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Poppins',
                     color: Colors.white,
                     fontSize: 22.0,
@@ -90,12 +104,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               20.0, 20.0, 20.0, 20.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).primaryColor,
+                          color: FlutterFlowTheme.of(context).primary,
                           textStyle:
-                              FlutterFlowTheme.of(context).subtitle2.override(
+                              FlutterFlowTheme.of(context).titleSmall.override(
                                     fontFamily: 'Poppins',
                                     color: Colors.white,
                                   ),
+                          elevation: 2.0,
                           borderSide: BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
@@ -117,12 +132,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               20.0, 20.0, 20.0, 20.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).primaryColor,
+                          color: FlutterFlowTheme.of(context).primary,
                           textStyle:
-                              FlutterFlowTheme.of(context).subtitle2.override(
+                              FlutterFlowTheme.of(context).titleSmall.override(
                                     fontFamily: 'Poppins',
                                     color: Colors.white,
                                   ),
+                          elevation: 2.0,
                           borderSide: BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
@@ -145,12 +161,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 20.0, 20.0, 20.0, 20.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).primaryColor,
-                            textStyle:
-                                FlutterFlowTheme.of(context).subtitle2.override(
-                                      fontFamily: 'Poppins',
-                                      color: Colors.white,
-                                    ),
+                            color: FlutterFlowTheme.of(context).primary,
+                            textStyle: FlutterFlowTheme.of(context)
+                                .titleSmall
+                                .override(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.white,
+                                ),
+                            elevation: 2.0,
                             borderSide: BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
@@ -172,12 +190,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               20.0, 20.0, 20.0, 20.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).primaryColor,
+                          color: FlutterFlowTheme.of(context).primary,
                           textStyle:
-                              FlutterFlowTheme.of(context).subtitle2.override(
+                              FlutterFlowTheme.of(context).titleSmall.override(
                                     fontFamily: 'Poppins',
                                     color: Colors.white,
                                   ),
+                          elevation: 2.0,
                           borderSide: BorderSide(
                             color: Colors.transparent,
                             width: 1.0,

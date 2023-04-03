@@ -53,7 +53,7 @@ class _TrueFalseQuizWidgetState extends State<TrueFalseQuizWidget> {
               width: 50.0,
               height: 50.0,
               child: CircularProgressIndicator(
-                color: FlutterFlowTheme.of(context).primaryColor,
+                color: FlutterFlowTheme.of(context).primary,
               ),
             ),
           );
@@ -65,7 +65,7 @@ class _TrueFalseQuizWidgetState extends State<TrueFalseQuizWidget> {
           appBar: PreferredSize(
             preferredSize: Size.fromHeight(80.0),
             child: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+              backgroundColor: FlutterFlowTheme.of(context).primary,
               automaticallyImplyLeading: false,
               leading: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
@@ -88,7 +88,7 @@ class _TrueFalseQuizWidgetState extends State<TrueFalseQuizWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                 child: Text(
                   'True or False Quiz',
-                  style: FlutterFlowTheme.of(context).title2.override(
+                  style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Poppins',
                         color: Colors.white,
                         fontSize: 22.0,
@@ -118,8 +118,7 @@ class _TrueFalseQuizWidgetState extends State<TrueFalseQuizWidget> {
                               width: 50.0,
                               height: 50.0,
                               child: CircularProgressIndicator(
-                                color:
-                                    FlutterFlowTheme.of(context).primaryColor,
+                                color: FlutterFlowTheme.of(context).primary,
                               ),
                             ),
                           );
@@ -140,7 +139,7 @@ class _TrueFalseQuizWidgetState extends State<TrueFalseQuizWidget> {
                                     .map<String>((s) => s.toString())
                                     .toList()[_model.index],
                                 textAlign: TextAlign.center,
-                                style: FlutterFlowTheme.of(context).subtitle2,
+                                style: FlutterFlowTheme.of(context).titleSmall,
                               ),
                             ),
                             Padding(
@@ -220,14 +219,14 @@ class _TrueFalseQuizWidgetState extends State<TrueFalseQuizWidget> {
                                       20.0, 20.0, 20.0, 20.0),
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryColor,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
-                                      .subtitle2
+                                      .titleSmall
                                       .override(
                                         fontFamily: 'Poppins',
                                         color: Colors.white,
                                       ),
+                                  elevation: 2.0,
                                   borderSide: BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
@@ -307,14 +306,14 @@ class _TrueFalseQuizWidgetState extends State<TrueFalseQuizWidget> {
                                       20.0, 20.0, 20.0, 20.0),
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryColor,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
-                                      .subtitle2
+                                      .titleSmall
                                       .override(
                                         fontFamily: 'Poppins',
                                         color: Colors.white,
                                       ),
+                                  elevation: 2.0,
                                   borderSide: BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
