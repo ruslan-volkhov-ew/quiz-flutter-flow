@@ -259,9 +259,7 @@ class _SettingsScreenWidgetState extends State<SettingsScreenWidget> {
             child: Padding(
               padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 20.0),
               child: FFButtonWidget(
-                onPressed: FFAppState().useSystemTheme
-                    ? null
-                    : () async {
+                onPressed:  () async {
                         Navigator.of(context).pop();
                       },
                 text: 'Go Back',
